@@ -1,9 +1,21 @@
 header {
   background-color: #2c3e4f;
-}
-header {
   color: white;
 }
-header h1 {
-  font-size: 1.5em;
+.start-bootstrap {
+  background-color: #19bc9b;
+}
+.about {
+  width: 100;
+}
+
+.profilo {
+  --height-profilo: 200px;
+  --widht-profilo: 250px;
+  height: var(--height-profilo);
+  width: var(--widht-profilo);
+  background-color: white;
+}
+.container {
+  max-width: 920px;
 }
