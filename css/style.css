@@ -1,12 +1,21 @@
-header {
-  background-color: #2c3e4f;
+:root {
+  --sec-background: #19bc9b;
+}
+header,
+.start-bootstrap,
+.about,
+footer {
   color: white;
 }
+
+header {
+  background-color: #2c3e4f;
+}
 .start-bootstrap {
-  background-color: #19bc9b;
+  background-color: var(--sec-background);
 }
 .about {
-  background-color: #19bc9b;
+  background-color: var(--sec-background);
 }
 
 .profile {
@@ -22,4 +31,8 @@ footer {
 }
 .container {
   max-width: 920px;
+}
+
+.fa-star + .border-3 {
+  background-color: black;
 }
