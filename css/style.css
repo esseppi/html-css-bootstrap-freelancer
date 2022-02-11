@@ -9,12 +9,10 @@ header {
   background-color: #19bc9b;
 }
 
-.profilo {
-  --height-profilo: 200px;
+.profile {
   --widht-profilo: 250px;
-  height: var(--height-profilo);
-  width: var(--widht-profilo);
-  background-color: white;
+  height: auto;
+  max-width: var(--widht-profilo);
 }
 footer {
   background-color: #3b536d;

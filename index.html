@@ -16,9 +16,8 @@
 
 <body>
     <header>
-        <div class="row">
-            <div
-                class="container col-12 d-flex justify-content-between justify-content-md-around justify-content-lg-between">
+        <div class="container">
+            <div class="row d-flex justify-content-between justify-content-md-between">
                 <div class="col-auto m-0 d-flex align-items-center">
                     <p class="m-0 p-2">START BOOTSTRAP</p>
                 </div>
@@ -31,7 +30,6 @@
                 </div>
                 <div class="col-1 p-2 m-0 d-flex align-items-center d-sm-block d-md-none">
                     <p class="text-center m-0"><i class="m-0 fas fa-bars"></i></p>
-
                 </div>
             </div>
         </div>
@@ -40,41 +38,45 @@
     <section>
         <div class="row">
             <div class="start-bootstrap py-4 col-12 d-flex flex-column align-items-center justify-content-between">
-                <div class="profilo">
-                </div>
-                <div class="infoProfilo text-center mt-4">
-                    <h1>START BOOTSTRAP</h1>
-                    <hr>
-                    <p>GRAPHIC ARTIST - WEB DESIGNE - ILLUSTRATOR</p>
+                <img src="img/avatar.svg" class="rounded profile" alt="...">
+
+                <div class="row infoProfilo text-center mt-4">
+                    <div class="col-auto">
+                        <h1>START BOOTSTRAP</h1>
+                        <hr>
+                        <p>GRAPHIC ARTIST - WEB DESIGNE - ILLUSTRATOR</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="portfolio">
         <div class="container">
-            <div class="col-12 mt-4 d-flex flex-column align-items-center justify-content-center">
-                <div class="row justify-content-center">
-                    <h1 class="col-auto">PORTFOLIO</h1>
-                    <hr>
-                    <div class="col-auto">
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
-                            <div class="col">
-                                <img src="https://picsum.photos/id/1/300/200" class="card-img-top" alt="...">
-                            </div>
-                            <div class="col">
-                                <img src="https://picsum.photos/id/1/300/200" class="card-img-top" alt="...">
-                            </div>
-                            <div class="col">
-                                <img src="https://picsum.photos/id/1/300/200" class="card-img-top" alt="...">
-                            </div>
-                            <div class="col">
-                                <img src="https://picsum.photos/id/1/300/200" class="card-img-top" alt="...">
-                            </div>
-                            <div class="col">
-                                <img src="https://picsum.photos/id/1/300/200" class="card-img-top" alt="...">
-                            </div>
-                            <div class="col">
-                                <img src="https://picsum.photos/id/1/300/200" class="card-img-top" alt="...">
+            <div class="row">
+                <div class="col-12 mt-4 d-flex flex-column align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <h1 class="col-auto">PORTFOLIO</h1>
+                        <hr>
+                        <div class="col-auto">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-3">
+                                <div class="col">
+                                    <img src="img/cabin.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="col">
+                                    <img src="img/cake.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="col">
+                                    <img src="img/circus.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="col">
+                                    <img src="img/game.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="col">
+                                    <img src="img/safe.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="col">
+                                    <img src="img/submarine.png" class="card-img-top" alt="...">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -83,10 +85,12 @@
         </div>
 
     </section>
-    <section class="about">
-        <div class="container mt-4 py-3">
-            <h1 class="col-auto text-center">ABOUT</h1>
-            <hr>
+    <section class="about py-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-auto m-auto">ABOUT</h1>
+                <hr>
+            </div>
             <div class="row px-4 text-justify">
                 <p class="col-12 col-md-6 col-lg-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
                     dignissimos modi
@@ -105,14 +109,32 @@
     </section>
     <section class="contact">
         <div class="container">
-            <h1 class="col-auto text-center mt-4">CONTACT ME</h1>
-            <hr>
-            <div class="row-cols-1 px-4 d-flex flex-column d-lg-block">
-                <input type="text" class="col-12 col-md-8 mx-md-auto col-lg-6" placeholder="Nome">
-                <input type="email" class="col-12 col-md-8 mx-md-auto col-lg-6" placeholder="Email Address">
-                <input type="number" class="col-12 col-md-8 mx-md-auto col-lg-6" placeholder="Phone Number">
-                <textarea name="message" class="col-12 col-md-8 mx-md-auto col-lg-6" cols="1" rows="3"
-                    placeholder="Message"></textarea>
+            <div class="row">
+                <h1 class="col-auto text-center mt-4">CONTACT ME</h1>
+                <hr>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+
+                <div class="row-cols-1 px-4 d-flex flex-column d-lg-block">
+                    <input type="text" class="col-12 col-md-8 mx-md-auto col-lg-6" placeholder="Nome">
+                    <input type="email" class="col-12 col-md-8 mx-md-auto col-lg-6" placeholder="Email Address">
+                    <input type="number" class="col-12 col-md-8 mx-md-auto col-lg-6" placeholder="Phone Number">
+                    <textarea name="message" class="col-12 col-md-8 mx-md-auto col-lg-6" cols="1" rows="3"
+                        placeholder="Message"></textarea>
+                </div>
             </div>
         </div>
 
