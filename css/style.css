@@ -1,5 +1,7 @@
 :root {
-  --sec-background: #19bc9b;
+  --bm-green: #19bc9b;
+  --bm-header: #2c3e4f;
+  --bm-footer: #3b536d;
 }
 header,
 .start-bootstrap,
@@ -7,15 +9,14 @@ header,
 footer {
   color: white;
 }
-
-header {
-  background-color: #2c3e4f;
+.bm-green {
+  background-color: var(--bm-green);
 }
-.start-bootstrap {
-  background-color: var(--sec-background);
+.bm-header {
+  background-color: var(--bm-header);
 }
-.about {
-  background-color: var(--sec-background);
+.bm-footer {
+  background-color: var(--bm-footer);
 }
 
 .profile {
@@ -23,16 +24,14 @@ header {
   height: auto;
   max-width: var(--widht-profilo);
 }
-footer {
-  background-color: #3b536d;
-}
-.copyright {
-  background-color: #2c3e4f;
-}
+
 .container {
   max-width: 920px;
 }
 
 .fa-star + .border-3 {
   background-color: black;
+}
+footer i {
+  font-size: 1.5rem;
 }
