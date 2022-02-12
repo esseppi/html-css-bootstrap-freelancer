@@ -3,8 +3,8 @@
   --bm-header: #2c3e4f;
   --bm-footer: #3b536d;
 }
-header,
-.start-bootstrap,
+nav,
+.hero,
 .about,
 footer {
   color: white;
@@ -18,35 +18,38 @@ footer {
 .bm-footer {
   background-color: var(--bm-footer);
 }
-
 .profile {
   --widht-profilo: 250px;
   height: auto;
   max-width: var(--widht-profilo);
 }
-
 .container {
   max-width: 920px;
 }
 ._card {
   position: relative;
 }
+.Pcard {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(25, 188, 156, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.Pcard > div {
+  width: 100%;
+  height: 100%;
+}
 ._plus {
   color: white;
   font-size: 5rem;
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-._card:hover ._plus {
-  display: inline-block;
+._card:hover .Pcard {
+  display: block;
 }
 
-.fa-star + .border-3 {
-  background-color: black;
-}
 footer i {
   font-size: 1.5rem;
 }
